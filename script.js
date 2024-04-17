@@ -1,13 +1,9 @@
-var ist=document.querySelector("h5")
-var add=document.querySelector("#add")
-var remove=document.querySelector("#remove")
+var con=document.querySelector("container")
+var love=document.querySelector("i")
+addEventListener("dblclick",function(){
+  love.style.transform= "translate(-50%,-50%) scale(1)";
+ setTimeout(function(){
+    love.style.transform= "translate(-50%,-50%) scale(0)";
 
-add.addEventListener("click",function(){
- 
-  ist.innerHTML="Friend"
-  ist.style.color="green"
-})
-remove.addEventListener("click",function(){
-    ist.innerHTML="Stranger"
-    ist.style.color="red"
+ },2000)
 })
